@@ -3,11 +3,13 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
 
 class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
+        Schema::disableForeignKeyConstraints();
         // Seed data yang sudah ada di database
         $this->call([
             // Indonesia location data (order matters!)
@@ -30,5 +32,7 @@ class DatabaseSeeder extends Seeder
             // Review data
             ReviewsTableSeeder::class,
         ]);
+
+        Schema::enableForeignKeyConstraints();
     }
 }

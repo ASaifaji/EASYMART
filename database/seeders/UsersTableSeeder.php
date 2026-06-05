@@ -143,7 +143,7 @@ class UsersTableSeeder extends Seeder
                 'status_verifikasi' => 'approved',
                 'nama_toko' => 'Test',
                 'deskripsi_singkat' => 'Test',
-                'no_handphone_pic' => 081081081081,
+                'no_handphone_pic' => '081081081081',
                 'alamat_pic' => 'Jalan jalan',
                 'rt' => 002,
                 'rw' => 004,
@@ -156,6 +156,30 @@ class UsersTableSeeder extends Seeder
                 'remember_token' => null,
                 'created_at' => '2025-12-11 03:36:11',
                 'updated_at' => '2025-12-11 03:38:20'
+            ],
+            [
+                'id' => 11,
+                'name' => 'Admin Platform',
+                'email' => 'admin2@easymart.com',
+                'email_verified_at' => null,
+                'password' => bcrypt('admin123'),
+                'role' => 'platform',
+                'status_verifikasi' => 'approved',
+                'nama_toko' => null,
+                'deskripsi_singkat' => null,
+                'no_handphone_pic' => null,
+                'alamat_pic' => null,
+                'rt' => null,
+                'rw' => null,
+                'nama_kelurahan' => null,
+                'kabupaten_kota' => null,
+                'provinsi' => null,
+                'no_ktp_pic' => null,
+                'foto_pic' => null,
+                'file_upload_ktp_pic' => null,
+                'remember_token' => null,
+                'created_at' => '2025-12-11 02:39:25',
+                'updated_at' => '2025-12-11 02:39:25'
             ]
         ]);
     }
